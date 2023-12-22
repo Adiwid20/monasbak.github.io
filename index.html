@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
-
+    <title>MoNasBak || Nasi Bakar </title>
+    <!-- logo -->
+    <link rel="shortcut icon" href="./img/nas.png" type="image/x-icon">
 
     <!-- font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -16,12 +17,12 @@
 <body>
     <!-- header start -->
     <header>
-        <a href="#home" class="logo"> <i class="fas-fa-untensils"></i>MoNasBak</a>
+        <a href="#home" class="logo"> <i class="fas-fa-untensils"></i>MoNasBak.</a>
 
         <nav class="navbar">
             <a class="active" href="#home">Home</a>
             <a href="#menu">Menu</a>
-            <a href="#about">About</a>
+            <a href="#about">Tentang</a>
         </nav>
 
         <div class="icons">
@@ -47,8 +48,9 @@
             <div class="wrapper">
                 <div class="slide">
                     <div class="content">
+                        <span> MoNasBak</span>
                         <h3>Master of Nasi Bakar</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quidem officia non!</p>
+                        <p>Setiap Bungkus Nasi Kami Adalah Persembahan Dari Keahlian Kami, Menggoda Lidah Dan Memanjakan Pencinta Kuliner.!</p>
                         <a href="#menu" class="btn">Order Now</a>
                     </div>
                     <div class="image">
@@ -67,106 +69,248 @@
         <h1 class="heading">utama</h1>
         <form
         method="POST" 
-        action="https://script.google.com/macros/s/AKfycbx4luLZbtbEObNa8_MjrCV0qHbDXqpT5Nc-dpIeKdLDXR_CdGrsfRu8ow66e7_2hafm/exec" id="my-form">
-        <div class="box-container">   
-            <div class="box" data-category="foodcort">
-                <div class="image">
-                    <img src="img/ayam.png" alt="ayam">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <h3>Ayam</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
-                    <span class="pice">Rp.10.000</span>
-                    <div class="jumlah">
+        action="https://script.google.com/macros/s/AKfycbzWGV7K705E3Sf3kVjSpD8BdxQSPgxu0GwqbCDbzgBcHglpuRoViCfWCC2bq3nc3eEg/exec" id="my-form">
+        <div class="row">
+            <div class="order-filter">
+                <a href="javascript:void(0);" data-target="lokasi" class="filter-btn active">Lokasi</a>
+                <a href="javascript:void(0);" data-target="delivery" class="filter-btn ">Delivery</a>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="food-item" data-category="lokasi">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/ayam.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Ayam</h3>
+                            <p>Potongan Ayam Yang Lembut Dan Beraroma, Dibalut Dengan Rempah-Rempah Pilihan Yang Meresap Ke Dalam Nasi.</p>
+                            <span class="pice">Rp.10.000</span>
+                            <div class="jumlah">
                         
-                            <div class="col-12" id="" class="">
-                                <div class="mb-3">
-                                    <label for="ayam" class="form-label">Jumlah</label>
-                                    <input type="number" class="form-control" id="ayam" name="ayam" min="0" max="5" length="0" value="0">
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="ayam" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="ayaml" name="ayaml" min="0" max="5" length="0" value="0">
+                                    </div>
                                 </div>
-                            </div>
-                        
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box" data-category="foodcort">
-                <div class="image">
-                    <img src="img/jamur.png" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <h3>Jamur</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
-                    <span class="pice">Rp.10.000</span>
-                    <div class="jumlah">
-                        <div class="col-12" id="" class="">
-                            <div class="mb-3">
-                                <label for="jamur" class="form-label">Jumlah</label>
-                                <input type="number" class="form-control" id="jamur" name="jamur" min="0" max="5" length="0" value="0">
-                            </div>
+            <div class="food-item" data-category="lokasi">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/jamur.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
                         </div>
-                </div>
+                        <div class="content">
+                            <h3>Jamur</h3>
+                            <p>Jamur Yang Dipilih Secara Teliti, Diberi Sentuhan Rempah Yang Menambah Kedalaman Rasa Pada Nasi Bakar.</p>
+                            <span class="pice">Rp.10.000</span>
+                            <div class="jumlah">
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="jamur" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="jamurl" name="jamurl" min="0" max="5" length="0" value="0">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="box" data-category="foodcort">
-                <div class="image">
-                    <img src="img/cumi.png" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <h3>Cumi</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
-                    <span class="pice">Rp.10.000</span>
-                    <div class="jumlah">
-                            <div class="col-12" id="" class="">
-                                <div class="mb-3">
-                                    <label for="cumi" class="form-label">Jumlah</label>
-                                    <input type="number" class="form-control" id="cumi" name="cumi" min="0" max="5" length="0" value="0">
+            <div class="food-item" data-category="lokasi">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/cumi.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Cumi</h3>
+                            <p>Cumi Segar Yang Dipadu Dengan Bumbu Rempah Yang Khas, Menyatu Dengan Nasi Yang Meresap Aroma Laut.</p>
+                            <span class="pice">Rp.15.000</span>
+                            <div class="jumlah">
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="cumi" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="cumil" name="cumil" min="0" max="5" length="0" value="0">
+                                    </div>
                                 </div>
-                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="lokasi">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/udang.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Udang</h3>
+                            <p>Udang Segar Yang Diolah Dengan Rempah-Rempah Istimewa, Melimpah Di Dalam Nasi Bakar.</p>
+                            <span class="pice">Rp.15.000</span>
+                            <div class="jumlah">
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="udang" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="udangl" name="udangl" min="0" max="5" length="0" value="0">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label nama" style="margin-top: 30px; display: flex; ">Nama</label>
+                            <input type="text" class="form-control" id="namal" name="namal">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="meja" class="form-label nama" style="margin-top: 10px; display: flex; ">Meja</label>
+                            <input type="text" class="form-control" id="meja" name="meja">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="box" data-category="foodcort">
-                <div class="image">
-                    <img src="img/udang.png" alt="">
-                    <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <h3>Udang</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
-                    <span class="pice">Rp.10.000</span>
-                    <div class="jumlah">
-                            <div class="col-12" id="" class="">
-                                <div class="mb-3">
-                                    <label for="udang" class="form-label">Jumlah</label>
-                                    <input type="number" class="form-control" id="udang" name="udang" min="0" max="5" length="0" value="0">
+
+
+            <div class="food-item" data-category="delivery">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/ayam.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Ayam</h3>
+                            <p>Potongan Ayam Yang Lembut Dan Beraroma, Dibalut Dengan Rempah-Rempah Pilihan Yang Meresap Ke Dalam Nasi.</p>
+                            <span class="pice">Rp.10.000</span>
+                            <div class="jumlah">
+                        
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="ayam" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="ayamd" name="ayamd" min="0" max="5" length="0" value="0">
+                                    </div>
                                 </div>
-                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12">
-            <div class="mb-3">
-                <label for="nama" class="form-label nama" style="margin-top: 30px; display: flex; ">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama">
+            <div class="food-item" data-category="delivery">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/jamur.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Jamur</h3>
+                            <p>Jamur Yang Dipilih Secara Teliti, Diberi Sentuhan Rempah Yang Menambah Kedalaman Rasa Pada Nasi Bakar.</p>
+                            <span class="pice">Rp.10.000</span>
+                            <div class="jumlah">
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="jamur" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="jamurd" name="jamurd" min="0" max="5" length="0" value="0">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-item" data-category="delivery">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/cumi.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Cumi</h3>
+                            <p>Cumi Segar Yang Dipadu Dengan Bumbu Rempah Yang Khas, Menyatu Dengan Nasi Yang Meresap Aroma Laut.</p>
+                            <span class="pice">Rp.15.000</span>
+                            <div class="jumlah">
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="cumi" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="cumid" name="cumid" min="0" max="5" length="0" value="0">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="food-item" data-category="delivery">
+                <div class="food-item-inner">
+                    <div class="box">
+                        <div class="image">
+                            <img src="img/udang.png" alt="">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                        <div class="content">
+                            <h3>Udang</h3>
+                            <p>Udang Segar Yang Diolah Dengan Rempah-Rempah Istimewa, Melimpah Di Dalam Nasi Bakar.</p>
+                            <span class="pice">Rp.15.000</span>
+                            <div class="jumlah">
+                                <div class="col-12" id="" class="">
+                                    <div class="mb-3">
+                                        <label for="udang" class="form-label">Pesan</label>
+                                        <input type="number" class="form-control" id="udangd" name="udangd" min="0" max="5" length="0" value="0">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label nama" style="margin-top: 30px; display: flex; ">Nama</label>
+                        <input type="text" class="form-control" id="namad" name="namad">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label nama" style="margin-top: 10px; display: flex; ">No.Hp</label>
+                        <input type="number" class="form-control" id="nomor" name="nomor">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label nama" style="margin-top: 10px; display: flex; ">Alamat</label>
+                        <input type="text" class="form-control" id="alamat" name="alamat">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12" style="margin-top: 1px; display: center;">
             <button class="btn btn-primary">Kirim</button>
         </div>
-    </form>        
+        </form>
     </section>
     <!-- menu section ends  -->
+
 
     <!-- about section start -->
     <section class="about" id="about">
 
-        <h3 class="sub-heading">about us </h3>
-        <h1 class="heading">why choose us</h1>
+        <h3 class="sub-heading"> Tentang Kami </h3>
+        <h1 class="heading">mengapa harus memilih kami</h1>
 
         <div class="row">
 
@@ -174,17 +318,49 @@
                 <img src="img/monasbak.png" alt="">
             </div>
 
-            <div class="content">
-                <h3>best foo in the world</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur at consequuntur veritatis
-                    delectus rerum.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sit quia praesentium harum, nostrum id
-                    nobis voluptatum temporibus minus porro!</p>
-
-                <a href="#" class="btn">learn more</a>
-            </div>
         </div>
+
+
+        <div class="row">
+            <div class="content">
+                <h3>Master dalam segala Nasi Bakar</h3>
+                <p>Kami Adalah Para Maestro Dalam Menggabungkan Rahasia Rempah-Rempah Dan Teknik Memasak Yang Memukau Untuk Menciptakan Nasi Bakar Yang Tak Terlupakan.
+
+                </p>
+                <p>Dengan Bahan-Bahan Pilihan Terbaik Dan Keahlian Yang Disempurnakan, Kami Menghadirkan Nasi Bakar Yang Tak Hanya Memuaskan Selera Tetapi Juga Mengundang Anda Untuk Merasakan Harmoni Cita Rasa Yang Tak Terlupakan.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>esay payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>fast respon</span>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/monasbak_/" class="btn">learn more</a>
+                <a href="https://wa.me/6282145201524" class="btn-wa">Hubungi Kami</a>
+                <a href="https://www.instagram.com/monasbak_/" class="btn">Gojek</a>
+            </div>
+            <div class="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d827.470679477472!2d115.07155175312252!3d-8.121815093220091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19beb3a1a4b41%3A0x3f26bb8826ae81bb!2sMonasbak!5e0!3m2!1sen!2sid!4v1701525676205!5m2!1sen!2sid"
+                    width="360" height="360" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <!-- <div class="locate">
+
+            <h2>Lokasi</h2>
+            <
+            
+        </div> -->
+
     </section>
     <!-- about section ends  -->
 
@@ -194,7 +370,7 @@
         <div class="box-container">
 
             <div class="box">
-                <h3>Locations</h3>
+                <h3>Lokasi</h3>
                 <a href="#">Indonesia</a>
             </div>
             <div class="box">
@@ -204,12 +380,12 @@
                 <a href="#">About</a>
             </div>
             <div class="box">
-                <h3>contact info</h3>
-                <a href="#">No.telp</a>
-                <a href="#">Email</a>
+                <h3>Info Kontak</h3>
+                <a href="#">6282145201524</a>
+                <a href="#">monasbakid@gmail.com</a>
             </div>
             <div class="box">
-                <h3>follow us</h3>
+                <h3>Follow Kami</h3>
                 <a href="#">Instagram</a>
                 <a href="#">Facebook</a>
                 <a href="#">Twitter</a>
@@ -217,7 +393,7 @@
 
         </div>
 
-        <div class="credit">copyright @ 2021 by <span>mr. Adi Widiantara</span></div>
+        <div class="credit">copyright @ 2021 by <span>MonasBak</span></div>
     </section>
 
 
@@ -225,28 +401,10 @@
 
 
 
-
+    <!-- jquery -->
+    <script src="js/jquery.min.js"></script>
     <!-- custom js file -->
     <script src="js/script.js"></script>
-    <script>
-        window.addEventListener("load", function() {
-  const form = document.getElementById('my-form');
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action = e.target.action;
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    })
-    .then(() => {
-      alert("Success!");
-    })
-  });
-});
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.min.js"></script>
 </body>
 
 </html>

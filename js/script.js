@@ -38,6 +38,8 @@
 //     document.querySelector('#search-form').classList.remove('active');
 // }
 
+  
+
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
@@ -78,17 +80,26 @@ document.querySelector('#close').onclick = () => {
     document.querySelector('#search-form').classList.remove('active');
 }
 
-// order filter 
+
+
+
 $(document).ready(function(){
-    $(".filter-btn").click(function(){
-        var target = $(this).attr("data-target");
-
+   
+    
+      orderFilter($(".filter-btn.active").attr("data-target"))
+      $(".filter-btn").click(function(){
+        if(!$(this).hasClass("active")){
+          orderFilter($(this).attr("data-target"))
+        }
+        
+      })
+      function orderFilter(target){
         $(".filter-btn").removeClass("active");
-        $(this).addClass("active");
-
-        $(".box").hide();
-        $(".box[data-category='" + target + "']").fadeIn();
-    });
-});
-
-
+        $(".filter-btn[data-target='"+target+"']").addClass("active");
+        $(".food-item").hide();
+        $(".food-item[data-category='"+target+"']").fadeIn();
+      }
+  
+  
+  
+})
