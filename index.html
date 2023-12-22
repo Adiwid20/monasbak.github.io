@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <a href="#home" class="logo"> <i class="fas-fa-untensils"></i>MoNasBak</a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+    </header>
+
+    <!-- header ends -->
+
+    <!-- search form -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here.." name="" id="search-box" />
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section -->
+
+    <section class="home" id="home">
+        <div class="home-slider">
+            <div class="wrapper">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Master of Nasi Bakar</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quidem officia non!</p>
+                        <a href="#menu" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- home section end -->
+
+    <!-- menu section start  -->
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">MENU</h3>
+        <h1 class="heading">utama</h1>
+        <form
+        method="POST" 
+        action="https://script.google.com/macros/s/AKfycbx4luLZbtbEObNa8_MjrCV0qHbDXqpT5Nc-dpIeKdLDXR_CdGrsfRu8ow66e7_2hafm/exec" id="my-form">
+        <div class="box-container">   
+            <div class="box" data-category="foodcort">
+                <div class="image">
+                    <img src="img/ayam.png" alt="ayam">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3>Ayam</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
+                    <span class="pice">Rp.10.000</span>
+                    <div class="jumlah">
+                        
+                            <div class="col-12" id="" class="">
+                                <div class="mb-3">
+                                    <label for="ayam" class="form-label">Jumlah</label>
+                                    <input type="number" class="form-control" id="ayam" name="ayam" min="0" max="5" length="0" value="0">
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-category="foodcort">
+                <div class="image">
+                    <img src="img/jamur.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3>Jamur</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
+                    <span class="pice">Rp.10.000</span>
+                    <div class="jumlah">
+                        <div class="col-12" id="" class="">
+                            <div class="mb-3">
+                                <label for="jamur" class="form-label">Jumlah</label>
+                                <input type="number" class="form-control" id="jamur" name="jamur" min="0" max="5" length="0" value="0">
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="box" data-category="foodcort">
+                <div class="image">
+                    <img src="img/cumi.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3>Cumi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
+                    <span class="pice">Rp.10.000</span>
+                    <div class="jumlah">
+                            <div class="col-12" id="" class="">
+                                <div class="mb-3">
+                                    <label for="cumi" class="form-label">Jumlah</label>
+                                    <input type="number" class="form-control" id="cumi" name="cumi" min="0" max="5" length="0" value="0">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-category="foodcort">
+                <div class="image">
+                    <img src="img/udang.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3>Udang</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, atque.</p>
+                    <span class="pice">Rp.10.000</span>
+                    <div class="jumlah">
+                            <div class="col-12" id="" class="">
+                                <div class="mb-3">
+                                    <label for="udang" class="form-label">Jumlah</label>
+                                    <input type="number" class="form-control" id="udang" name="udang" min="0" max="5" length="0" value="0">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="mb-3">
+                <label for="nama" class="form-label nama" style="margin-top: 30px; display: flex; ">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama">
+            </div>
+        </div>
+        <div class="col-12" style="margin-top: 1px; display: center;">
+            <button class="btn btn-primary">Kirim</button>
+        </div>
+    </form>        
+    </section>
+    <!-- menu section ends  -->
+
+    <!-- about section start -->
+    <section class="about" id="about">
+
+        <h3 class="sub-heading">about us </h3>
+        <h1 class="heading">why choose us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="img/monasbak.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>best foo in the world</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur at consequuntur veritatis
+                    delectus rerum.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sit quia praesentium harum, nostrum id
+                    nobis voluptatum temporibus minus porro!</p>
+
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+    <!-- about section ends  -->
+
+    <!-- footer  -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">Indonesia</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">About</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">No.telp</a>
+                <a href="#">Email</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+
+        </div>
+
+        <div class="credit">copyright @ 2021 by <span>mr. Adi Widiantara</span></div>
+    </section>
+
+
+
+
+
+
+
+    <!-- custom js file -->
+    <script src="js/script.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</body>
+
+</html>
